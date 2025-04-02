@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center; font-family: initial; font-weight: 200; text-decoration: underline overline;color: chocolate;">JS data Types</h1>
+    <button onclick="func()">Click Here</button>
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="n"></p>
+    <script>
+        var a = 5;
+        var b = 8;
+        var c = null;
+        var d ;
+        var e = false;
+{
+    let a= 7;
+    const b = 5;
+}
+document.write("a and b are equal " + (a==b));
+document.write("<br>");
+document.write("integer " +b);
+document.write("<br>");
+document.write("value of c " +c);
+document.write("<br>");
+document.write("value of d " +d);
+document.write("<br>");
+document.write("Boolian " +e);
+document.write("<br>");
+
+function func() {
+    var greet
+var time = new Date().getHours()
+if(time < 10){
+    greet="Good Morning"
+}
+else if (time<20){
+    greet="Good Afternoon"
+}
+else {
+    greet="Good evening"
+}
+document.getElementById("a").innerHTML="Current Hour Is " + time
+document.getElementById("b").innerHTML= greet
+}
+
+var text = "";
+var i = 0;
+while(i<15){
+    text="<br> The Number Is  " +i
+    document.write(text)
+    i++
+
+}
+    </script>
+</body>
+</html>
